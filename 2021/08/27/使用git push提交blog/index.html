@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Sueyoki</title>
+  <title itemprop="name">使用git push提交blog | Sueyoki</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -347,521 +347,165 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 0px;"></div>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://gitee.com/Sueyoki/picture/raw/master/pic/img1.jpg);" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img1.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      使用git push提交blog</h1>
+      <p class="entry-census">
+        <span>
+          <a href="hojun.cn">
+            <img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="hojun.cn">Sueyoki</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-8-27<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
-  
-  <div class="notice" style="margin-top:60px">
-    <i class="iconfont icon-notification">
-    </i>
-    <div class="notice-content">女孩子要狡猾一点才可爱~</div>
-  </div>
-  
-  <div class="top-feature-row">
-  <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-  <i class="fa fa-anchor" aria-hidden="true">
-  </i>
-  兴趣</h1>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="http://www.imomoe.la/view/4537.html" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/startdash/SAO.png">
-        </div>
-        <div class="info">
-          <h3>Sword Art Online</h3>
-          <p>好看的番</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://space.bilibili.com/13588223" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/startdash/bilibili.jpg">
-        </div>
-        <div class="info">
-          <h3>Bilibili</h3>
-          <p>博主的b站视频</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="/theme-sakura/" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/startdash/1.png">
-        </div>
-        <div class="info">
-          <h3>Sueyoki的森林小屋</h3>
-          <p>技术服务</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-</div>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-envira" aria-hidden="true"></i>
-      Discovery</h1>
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="使用git-push提交blog"><a href="#使用git-push提交blog" class="headerlink" title="使用git push提交blog"></a>使用git push提交blog</h1><p>原因是hexo莫名其妙总是提交到master上，参数改了也没用，决定直接git push~</p>
+<p>在此之前先本地找个空文件夹，然后进去，（其实和CDN操作差不多，可以参考上一篇</p>
+<p>点右键Git Bash Here,在命令窗口中执行一下命令：</p>
+<p>git clone 复制的仓库ssh地址    //比如我的git clone <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>:Sueyoki/Sueyoki.github.io.git</p>
+<p>然后cd 进入下一级目录</p>
+<p>cd Sueyoki.github.io</p>
+<p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108210954186.png" alt="image-20210821095421810"></p>
+<p>git branch -a //查看分支</p>
+<p>git checkout 想要操作的分支 //git checkout main （已经默认在main里面了，没必要</p>
+<p>git rm -r 我的文件夹/   #（其实我这里直接本地按shift就能删除了，垃圾管理员权限</p>
+<p>然后把我可爱的master生成的静态网页下载下来，然后塞进去（其实就是public文件夹下的所有文件</p>
+<p>在blog\Sueyoki\public下面，一眼就能看到，然后复制到新建的文件夹里面</p>
+<p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202109141738931.png" alt="image-20210821101519778"></p>
+<p>直接在git下输入这四个命令</p>
+<p>git status                    //查看状态<br> git add .                     //添加所有文件到暂存区  不要忘记后面那个.<br> git commit -m ‘第一次提交’      //把文件提交到仓库，单引号里随便改<br> git push                      //推送至远程仓库</p>
+<p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108211020074.png" alt="52"></p>
+<p>push成功了</p>
+<p>打开<a href="https://sueyoki.github.io/">Sueyoki</a></p>
+<p>PS：里面全是html，不会改</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42717849/article/details/88373493">【GitHub】GitHub Pages上发布静态页面_Zhouzhouzzz冲鸭-CSDN博客</a></p>
+<p>（以下其实全是废话，看不懂建议别看</p>
+<h2 id="1-把文件拖过来或者是选择文件"><a href="#1-把文件拖过来或者是选择文件" class="headerlink" title="1.把文件拖过来或者是选择文件"></a>1.把文件拖过来或者是选择文件</h2><p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108211034399.png" alt="在这里插入图片描述"></p>
+<h2 id="2-上传成功的文件会出现在下方，点击下方的提交，就把文件提交成功啦"><a href="#2-上传成功的文件会出现在下方，点击下方的提交，就把文件提交成功啦" class="headerlink" title="2.上传成功的文件会出现在下方，点击下方的提交，就把文件提交成功啦"></a>2.上传成功的文件会出现在下方，点击下方的提交，就把文件提交成功啦</h2><p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108211033542.png" alt="在这里插入图片描述"></p>
+<p>这个操作不错子，但暂时不用</p>
+<h2 id="3-这个时候就可以看见上传成功的文件了，点击右方的settings"><a href="#3-这个时候就可以看见上传成功的文件了，点击右方的settings" class="headerlink" title="3.这个时候就可以看见上传成功的文件了，点击右方的settings"></a>3.这个时候就可以看见上传成功的文件了，点击右方的settings</h2><p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108211104908.png" alt="在这里插入图片描述"></p>
+<h2 id="4-找到GitHub-Pages，如图选择"><a href="#4-找到GitHub-Pages，如图选择" class="headerlink" title="4.找到GitHub Pages，如图选择"></a>4.找到GitHub Pages，如图选择</h2><p><img src="https://gitee.com/Sueyoki/ctf/raw/master/202108211108367.png" alt="image-20210821110757355"></p>
+<p>转到master，然后save</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏<div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2021/08/27/gitee%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img6.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://gitee.com/Sueyoki/picture/raw/master/pic/img6.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                Gitee仓库使用（附gitee pages参考）</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/08/27/%E5%85%B3%E4%BA%8ESakura%E5%9C%A8%E6%90%AD%E5%BB%BAjsDeliver+Github%E4%B8%8ACDN%E7%9A%84%E6%8C%87%E5%8D%97/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img9.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://gitee.com/Sueyoki/picture/raw/master/pic/img9.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                关于Sakura在搭建jsDeliver+Github上CDN的指南</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "DIsRFBh44lz3G8FO59MXlQtJ-MdYXbMMI",
+        appKey: "t3lafjH9kXrdVkTMNRFvBkst",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
-  <div class="post-thumb">
-    <a href="/2021/11/20/%E6%B8%85%E7%90%86git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img14.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-11-20 22:11</div>
-      <a href="/2021/11/20/%E6%B8%85%E7%90%86git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95/" class="post-title">
-        <h3>清理git提交记录</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>我蠢了呜呜呜~</p>
-        <div class="post-bottom">
-          <a href="/2021/11/20/%E6%B8%85%E7%90%86git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@master/img/custom/avatar.png" itemprop="image" alt="Sueyoki" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="hojun.cn" itemprop="url" rel="author">Sueyoki</a>
+            </h3>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/11/09/Python%E7%9A%84socket%E9%80%9A%E4%BF%A1/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img12.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-11-9 22:11</div>
-      <a href="/2021/11/09/Python%E7%9A%84socket%E9%80%9A%E4%BF%A1/" class="post-title">
-        <h3>Pytohn实现不同PC之间的进程通信</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>2021秋操作系统第二次作业</p>
-        <div class="post-bottom">
-          <a href="/2021/11/09/Python%E7%9A%84socket%E9%80%9A%E4%BF%A1/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/10/05/Chive2021autumn.Crypto%E7%9A%84wp/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img11.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-10-5 22:10</div>
-      <a href="/2021/10/05/Chive2021autumn.Crypto%E7%9A%84wp/" class="post-title">
-        <h3>Chive2021autumn.Crypto的wp</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/CTF/">CTF</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>2021第五空间秋季纳新赛密码学wp</p>
-        <div class="post-bottom">
-          <a href="/2021/10/05/Chive2021autumn.Crypto%E7%9A%84wp/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/09/04/%E5%85%B3%E4%BA%8E%E5%9B%BE%E7%89%87%E8%BD%AC%E6%8D%A2/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img5.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-9-4 22:09</div>
-      <a href="/2021/09/04/%E5%85%B3%E4%BA%8E%E5%9B%BE%E7%89%87%E8%BD%AC%E6%8D%A2/" class="post-title">
-        <h3>关于webp，png，jpg图片转换</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-            <a href="/tags/%E7%B2%BE%E5%8D%8E/">精华<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E9%9A%8F%E6%83%B3/">随想</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>好用的图片转换python源码</p>
-        <div class="post-bottom">
-          <a href="/2021/09/04/%E5%85%B3%E4%BA%8E%E5%9B%BE%E7%89%87%E8%BD%AC%E6%8D%A2/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/27/Sakura%E7%BE%8E%E5%8C%96/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img10.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-27 22:08</div>
-      <a href="/2021/08/27/Sakura%E7%BE%8E%E5%8C%96/" class="post-title">
-        <h3>Sakura主题美化</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-            <a href="/tags/%E7%B2%BE%E5%8D%8E/">精华<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>大部分在参考博客里，这里是小细节优化</p>
-        <div class="post-bottom">
-          <a href="/2021/08/27/Sakura%E7%BE%8E%E5%8C%96/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/27/gitee%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img6.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-27 22:08</div>
-      <a href="/2021/08/27/gitee%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8/" class="post-title">
-        <h3>Gitee仓库使用（附gitee pages参考）</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>其实和Github仓库差不多</p>
-        <div class="post-bottom">
-          <a href="/2021/08/27/gitee%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/27/%E4%BD%BF%E7%94%A8git%20push%E6%8F%90%E4%BA%A4blog/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img1.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-27 22:08</div>
-      <a href="/2021/08/27/%E4%BD%BF%E7%94%A8git%20push%E6%8F%90%E4%BA%A4blog/" class="post-title">
-        <h3>使用git push提交blog</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>hexo提交有点问题，直接push</p>
-        <div class="post-bottom">
-          <a href="/2021/08/27/%E4%BD%BF%E7%94%A8git%20push%E6%8F%90%E4%BA%A4blog/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/27/%E5%85%B3%E4%BA%8ESakura%E5%9C%A8%E6%90%AD%E5%BB%BAjsDeliver+Github%E4%B8%8ACDN%E7%9A%84%E6%8C%87%E5%8D%97/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img9.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-27 22:08</div>
-      <a href="/2021/08/27/%E5%85%B3%E4%BA%8ESakura%E5%9C%A8%E6%90%AD%E5%BB%BAjsDeliver+Github%E4%B8%8ACDN%E7%9A%84%E6%8C%87%E5%8D%97/" class="post-title">
-        <h3>关于Sakura在搭建jsDeliver+Github上CDN的指南</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>CDN其实挺简单的</p>
-        <div class="post-bottom">
-          <a href="/2021/08/27/%E5%85%B3%E4%BA%8ESakura%E5%9C%A8%E6%90%AD%E5%BB%BAjsDeliver+Github%E4%B8%8ACDN%E7%9A%84%E6%8C%87%E5%8D%97/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/25/2021BIN%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img4.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-25 22:08</div>
-      <a href="/2021/08/25/2021BIN%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="post-title">
-        <h3>2021BIN实验报告</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/CTF/">CTF</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>2021夏小学期创新课</p>
-        <div class="post-bottom">
-          <a href="/2021/08/25/2021BIN%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/08/25/2021misc%E5%AE%9E%E9%AA%8C/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Sueyoki/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://gitee.com/Sueyoki/picture/raw/master/pic/img2.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-8-25 22:08</div>
-      <a href="/2021/08/25/2021misc%E5%AE%9E%E9%AA%8C/" class="post-title">
-        <h3>2021MISC实验报告</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/web/">web<em>·</em></a>
-          
-            <a href="/tags/%E6%82%A6%E8%AF%BB/">悦读<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/CTF/">CTF</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p>2021夏小学期创新课</p>
-        <div class="post-bottom">
-          <a href="/2021/08/25/2021misc%E5%AE%9E%E9%AA%8C/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-
-
-    </main>
-      <!-- 首页默认取最最新文章集 -->
-    <!-- 
-      <nav class="navigator">
-        
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;iconfont icon-right&quot;&gt;&lt;&#x2F;i&gt;</a>
-      </nav>
-     -->
-  </div>
-  
-    <div id="pagination"><a href="/page/2/" class="">Previous</a></div>
-  
+        <hr>
+        <p><i class="iconfont icon-write"></i>一只古灵古灵的精怪</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
